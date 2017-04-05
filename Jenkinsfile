@@ -9,6 +9,7 @@ pipeline {
     stage('build') {
       steps {
         dir(path: 'readbookweb') {
+          sh 'hostname'
           sh 'npm install'
         }
         
