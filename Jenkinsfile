@@ -19,8 +19,11 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh 'pwd'
-        sh 'npm run test'
+        dir(path: 'readbookweb') {
+          sh 'pwd'
+          sh 'npm run test'
+        }
+        
       }
     }
   }
