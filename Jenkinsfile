@@ -10,7 +10,8 @@ pipeline {
       steps {
         dir(path: 'readbookweb') {
           sh 'hostname'
-          sh 'npm install'
+          sh '''pwd
+ls -la'''
         }
         
       }
