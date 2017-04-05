@@ -20,6 +20,7 @@ pipeline {
     stage('test') {
       steps {
         dir(path: 'readbookweb') {
+          sh 'hostname'
           sh 'pwd'
           sh 'npm run test'
         }
