@@ -10,8 +10,9 @@ pipeline {
       steps {
         dir(path: 'readbookweb') {
           sh 'hostname'
-          sh '''pwd
-ls -la'''
+          sh 'pwd'
+          sh 'ls -la'
+          sh 'ls -la /'
         }
         
       }
