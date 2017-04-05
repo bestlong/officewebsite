@@ -1,8 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'node'
-      args '7.8'
+      image 'node:7.8'
     }
     
   }
