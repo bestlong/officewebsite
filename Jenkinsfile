@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        dir(path: 'readbookweb') {
+        dir(path: './readbookweb') {
           sh 'hostname'
           sh 'pwd'
           sh 'ls -la'
