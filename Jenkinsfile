@@ -13,6 +13,8 @@ pipeline {
           sh 'pwd'
           sh 'ls -la'
           sh 'ls -la /'
+          sh 'cd readbookweb'
+          sh 'pwd'
         }
         
       }
